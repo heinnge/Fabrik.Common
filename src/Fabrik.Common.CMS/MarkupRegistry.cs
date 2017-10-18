@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using StructureMap.Configuration.DSL;
+using StructureMap;
 
-namespace Fabrik.Common.CMS {
+namespace Fabrik.Common.CMS
+{
     public class MarkupRegistry : Registry {
         public MarkupRegistry() {
             For<IContentRenderer>().Use<ContentRenderer>();
